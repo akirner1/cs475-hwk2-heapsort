@@ -41,7 +41,10 @@ int main(int argc, char *argv[])
 		printf("Maximum employees reached. Exiting employee creation\n");
 	}
 	int numEmployees = i;
+	printf("Before: ");
+	printList(employees, numEmployees);
 	heapSort(employees, numEmployees);
+	printf("After: ");
 	printList(employees, numEmployees);
 
 	return 0;
